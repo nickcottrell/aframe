@@ -5,9 +5,12 @@
     <title>Spheres &amp; Fog</title>
     <meta name="description" content="Spheres &amp; Fog — A-Frame">
     <script src="../../dist/aframe.js"></script>
+    <script src="https://rawgit.com/amberroy/aframe-altspace-component/master/dist/aframe-altspace-component.js"></script>
   </head>
   <body>
-    <a-scene fog="type: linear; color: #AAB; far: 30; near: 0">
+    <a-scene 
+      fog="type: linear; color: #AAB; far: 30; near: 0" 
+      altspace="autoscale: true" scale="0.05 0.05 0.05" position="0 -300 0">
 
       <!-- Ground highlight -->
       <a-image position="0 -.2 5" src="../_images/radial-highlight-1.png" rotation="-90 0 0" scale="30 30 30"></a-image>

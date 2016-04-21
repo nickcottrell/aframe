@@ -5,9 +5,10 @@
     <title>Planes</title>
     <meta name="description" content="Planes — A-Frame">
     <script src="../../dist/aframe.js"></script>
+    <script src="https://rawgit.com/amberroy/aframe-altspace-component/master/dist/aframe-altspace-component.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene altspace="autoscale: true" scale="0.2 0.2 0.2">
       <a-plane position="-3 1 0" rotation="-5 45 -10" width="2" height="4" color="#93648D"></a-plane>
       <a-plane position="0 1 0" rotation="0 -45 10" height="10" color="#FFC65D"></a-plane>
       <a-plane position="3 1 0" rotation="45 -45 0" height="7" color="#4CC3D9" metalness=".1"></a-plane>

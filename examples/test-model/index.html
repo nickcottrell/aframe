@@ -5,9 +5,10 @@
     <title>Model</title>
     <meta name="description" content="Model - A-Frame">
     <script src="../../dist/aframe.js"></script>
+    <script src="https://rawgit.com/amberroy/aframe-altspace-component/master/dist/aframe-altspace-component.js"></script>
   </head>
   <body>
-    <a-scene stats="true">
+    <a-scene stats="true" altspace="autoscale: true" scale="0.1 0.1 0.1" position="0 -300 0">
       <a-assets>
         <a-asset-item id="crate-obj" src="models/crate/crate.obj"></a-asset-item>
         <a-asset-item id="crate-mtl" src="models/crate/crate.mtl"></a-asset-item>

@@ -5,9 +5,10 @@
     <title>Mixins</title>
     <meta name="description" content="Mixins">
     <script src="../../dist/aframe.js"></script>
+    <script src="https://rawgit.com/amberroy/aframe-altspace-component/master/dist/aframe-altspace-component.js"></script>
   </head>
   <body>
-    <a-scene stats="true">
+    <a-scene stats="true" altspace="autoscale: true" scale="0.2 0.2 0.2">
       <a-assets>
         <a-mixin id="cube" geometry="primitive: box" material="color: red" rotation="0 45 0"></a-mixin>
         <a-mixin id="sphere" geometry="primitive: sphere" material="color: blue"></a-mixin>

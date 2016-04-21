@@ -5,10 +5,12 @@
     <title>Fog</title>
     <meta name="description" content="Fog - A-Frame">
     <script src="../../dist/aframe.js"></script>
+    <script src="https://rawgit.com/amberroy/aframe-altspace-component/master/dist/aframe-altspace-component.js"></script>
   </head>
   <body>
     <a-scene fog="type: linear; color: #AAB; far: 150; near: 0"
-             stats="true">
+             stats="true"
+             altspace="autoscale: true" scale="0.01 0.01 0.01">
       <a-assets>
         <a-mixin id="move" attribute="position" direction="alternate" dur="4096"
                            fill="forwards" easing="linear" repeat="indefinite">

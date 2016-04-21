@@ -5,9 +5,10 @@
     <title>Anime UI</title>
     <meta name="description" content="Anime UI — A-Frame">
     <script src="../../dist/aframe.js"></script>
+    <script src="https://rawgit.com/amberroy/aframe-altspace-component/master/dist/aframe-altspace-component.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene altspace="autoscale: true" scale="0.2 0.2 0.2">
       <a-assets>
         <img id="glow1" src="images/glow1.png">
         <img id="ring1" src="images/ring1.png">
@@ -25,8 +26,6 @@
         <img id="text3" src="images/text3.png">
         <img id="text4" src="images/text4.png">
         <a-asset-item id="engine" src="models/engine.dae"></a-asset-item>
-        <audio id="blip1" src="../_sounds/321103__nsstudios__blip1.wav">
-        <audio id="blip2" src="../_sounds/321104__nsstudios__blip2.wav">
         <a-mixin id="image" geometry="height: 2; width: 2"></a-mixin>
       </a-assets>
 
@@ -226,10 +225,6 @@
         <a-animation attribute="intensity" from="0" to="1" begin="500" dur="500" fill="both"></a-animation>
       </a-light>
       <a-light type="ambient" color="#4f6487" ></a-light>
-
-      <!-- Sounds. -->
-      <a-entity sound="autoplay: true; src: ../_sounds/321103__nsstudios__blip1.wav;"></a-entity>
-      <a-entity sound="autoplay: true; src: ../_sounds/321104__nsstudios__blip2.wav;"></a-entity>
     </a-scene>
   </body>
 </html>

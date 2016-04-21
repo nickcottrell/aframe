@@ -5,9 +5,10 @@
     <title>Cylinders</title>
     <meta name="description" content="Cylinders - A-Frame">
     <script src="../../dist/aframe.js"></script>
+    <script src="https://rawgit.com/amberroy/aframe-altspace-component/master/dist/aframe-altspace-component.js"></script>
   </head>
   <body>
-    <a-scene stats="true">
+    <a-scene stats="true" altspace="autoscale: true" scale="0.1 0.1 0.1">
       <a-assets>
         <a-mixin id="cylinder" geometry="primitive: cylinder"></a-mixin>
         <a-mixin id="open-ended" geometry="openEnded: true" material="side: double"></a-mixin>

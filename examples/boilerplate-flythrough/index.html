@@ -5,9 +5,10 @@
     <title>Fly Through</title>
     <meta name="description" content="Fly Through - A-Frame">
     <script src="../../dist/aframe.js"></script>
+    <script src="https://rawgit.com/amberroy/aframe-altspace-component/master/dist/aframe-altspace-component.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene altspace="autoscale: true" scale="0.01 0.01 0.01">
       <a-entity>
         <a-animation attribute="position" from="0 0 -10" to="0 0 10" dur="10000"
                      easing="linear"></a-animation>

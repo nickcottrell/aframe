@@ -5,10 +5,11 @@
   <title>Light Component</title>
   <meta name="description" content="Light Component - A-Frame">
   <script src="../../dist/aframe.js"></script>
+    <script src="https://rawgit.com/amberroy/aframe-altspace-component/master/dist/aframe-altspace-component.js"></script>
 </head>
 
 <body>
-  <a-scene stats="true">
+  <a-scene stats="true" altspace="autoscale: true" scale="0.01 0.01 0.01">
     <a-assets>
       <a-mixin id="light" geometry="primitive: sphere; radius: 1.5"
                material="color: #FFF; shader: flat"
@@ -60,7 +61,7 @@
       return Math.random() < .5 ? coord + 5 : coord * -1 - 5;
     }
 
-    for (var i = 0; i < 500; i++) {
+    for (var i = 0; i < 10; i++) {
       var obj = document.createElement('a-entity');
       obj.setAttribute('geometry', {
         primitive: 'torusKnot',
