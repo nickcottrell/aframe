@@ -5,7 +5,7 @@
     <title>Shaders</title>
     <meta name="description" content="Shaders">
     <script src="../../dist/aframe.js"></script>
-    <script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v0.1.0/dist/aframe-altspace-component.min.js"></script>
+    <script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v0.2.1/dist/aframe-altspace-component.min.js"></script>
     <script src="shaders/noise.js"></script>
     <script src="shaders/sky.js"></script>
   </head>
@@ -36,7 +36,7 @@
       });
     </script>
 
-    <a-scene stats="true" altspace="autoscale: true" scale="0.2 0.2 0.2">
+    <a-scene stats="true" altspace scale="0.2 0.2 0.2">
       <a-entity id="sky" geometry="primitive: sphere; radius: 100;"
                 material="shader: sky; side: back" sun-position-setter>
         <a-entity id="orbit">
