@@ -12,6 +12,7 @@ module.exports = registerElement('a-node', {
   prototype: Object.create(HTMLElement.prototype, {
     createdCallback: {
       value: function () {
+        if (this.tagName === 'A-BOX') console.log('>>> a-node: createdCallback', this);
         this.hasLoaded = false;
         this.isNode = true;
         this.mixinEls = [];
@@ -21,6 +22,7 @@ module.exports = registerElement('a-node', {
 
     attachedCallback: {
       value: function () {
+        if (this.tagName === 'A-BOX') console.log('>>> a-node: attachedCallback', this);
         var mixins = this.getAttribute('mixin');
         this.sceneEl = this.tagName === 'A-SCENE' ? this : this.closest('a-scene');
         this.emit('nodeready', {}, false);
@@ -30,6 +32,8 @@ module.exports = registerElement('a-node', {
 
     attributeChangedCallback: {
       value: function (attr, oldVal, newVal) {
+        if (this.tagName === 'A-BOX')
+          console.log('>>> a-node: A-BOX attribute '+attr+' changed '+oldVal+' ---> '+newVal);
         if (attr === 'mixin') { this.updateMixins(newVal, oldVal); }
       }
     },
@@ -63,6 +67,7 @@ module.exports = registerElement('a-node', {
      */
     load: {
       value: function (cb, childFilter) {
+        if (this.tagName === 'A-BOX') console.log('>>> a-node: load', this);
         var children;
         var childrenLoaded;
         var self = this;
@@ -215,6 +220,7 @@ module.exports = registerElement('a-node', {
      */
     emit: {
       value: function (name, detail, bubbles) {
+        if (this.tagName === 'A-BOX') console.log('>>> a-node: emit '+name, detail);
         var self = this;
         detail = detail || {};
         if (bubbles === undefined) { bubbles = true; }
