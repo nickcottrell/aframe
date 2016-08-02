@@ -5,10 +5,9 @@
     <title>Lights</title>
     <meta name="description" content="Lights – A-Frame">
     <script src="../../dist/aframe.js"></script>
-    <script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v0.2.1/dist/aframe-altspace-component.min.js"></script>
   </head>
   <body>
-    <a-scene altspace scale="0.025 0.025 0.025">
+    <a-scene>
       <a-assets>
         <a-mixin id="light" geometry="primitive: sphere; radius: 1.5"
                  material="color: #FFF; shader: flat"
@@ -46,7 +45,7 @@
     <script>
       var scene = document.querySelector('a-scene');
 
-      for (var i = 0; i < 5; i++) {
+      for (var i = 0; i < 120; i++) {
         var obj = document.createElement('a-entity');
         obj.setAttribute('geometry', {
           primitive: 'torusKnot',

@@ -5,10 +5,9 @@
     <title>A-Frame Logo</title>
     <meta name="description" content="A-Frame Logo - A-Frame">
     <script src="../../dist/aframe.js"></script>
-    <script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v0.2.1/dist/aframe-altspace-component.min.js"></script>
   </head>
   <body>
-    <a-scene vr-mode-ui="enabled: false" altspace="autoscale: false" scale="20 20 20" position="0 -300 0">
+    <a-scene vr-mode-ui="enabled: false">
       <a-assets>
         <a-asset-item id="tree" src="../_models/tree1/tree1.dae"></a-asset-item>
       </a-assets>
@@ -22,7 +21,7 @@
                   look-controls-enabled="false"></a-camera>
       </a-entity>
 
-      <a-entity id="logo" rotation="0 90 0">
+      <a-entity id="logo" rotation="0 45 0">
         <!-- Right side -->
         <a-entity rotation="-20 0 0" position="0 0 10.75" scale="1 0 1">
           <a-animation attribute="scale" to="1 1 1" begin="200" dur="1000"
@@ -46,9 +45,9 @@
           <a-animation attribute="scale" to="1 1 1" begin="800" dur="600"
                        easing="ease-out"></a-animation>
           <a-box width="12.45" depth=".1" height="14" color="#F2E646"
-                 translate="0 7 .52" shader="flat"></a-box>
+                 position="0 7 .52" shader="flat"></a-box>
           <a-box width="12.5" depth="1" height="14" color="#EF2D5E"
-                 translate="0 7 0"></a-box>
+                 position="0 7 0"></a-box>
         </a-entity>
 
         <!-- Clouds -->
@@ -94,11 +93,13 @@
         </a-entity>
 
         <!-- Shadow -->
-        <a-plane width="12.5" height="20" position="0 .01 10" translate="0 10 0"
-                 color="#21897C" rotation="-90 0 0">
-          <a-animation attribute="scale" from="1 0 1" to="1 1 1" easing="ease-out" begin="600"
-                       dur="1000" fill="backwards"></a-animation>
-        </a-plane>
+        <a-entity rotation="-90 0 0">
+          <a-plane width="12.5" height="20" position="0 0 0.1" pivot="0 -10 0"
+                   color="#21897C">
+            <a-animation attribute="scale" from="1 0 1" to="1 1 1" easing="ease-out"
+                         begin="600" dur="1000" fill="both"></a-animation>
+          </a-plane>
+        </a-entity>
 
         <!-- Base -->
         <a-entity>

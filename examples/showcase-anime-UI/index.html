@@ -5,10 +5,9 @@
     <title>Anime UI</title>
     <meta name="description" content="Anime UI — A-Frame">
     <script src="../../dist/aframe.js"></script>
-    <script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v0.2.1/dist/aframe-altspace-component.min.js"></script>
   </head>
   <body>
-    <a-scene altspace scale="0.2 0.2 0.2">
+    <a-scene>
       <a-assets>
         <img id="glow1" src="images/glow1.png">
         <img id="ring1" src="images/ring1.png">
@@ -26,6 +25,8 @@
         <img id="text3" src="images/text3.png">
         <img id="text4" src="images/text4.png">
         <a-asset-item id="engine" src="models/engine.dae"></a-asset-item>
+        <audio id="blip1" src="../_sounds/321103__nsstudios__blip1.wav">
+        <audio id="blip2" src="../_sounds/321104__nsstudios__blip2.wav">
         <a-mixin id="image" geometry="height: 2; width: 2"></a-mixin>
       </a-assets>
 
@@ -42,98 +43,98 @@
           <a-plane width="1" height="4" shader="flat" color="#B4E2F8">
             <a-animation attribute="visible" from="false" to="true" begin="350" dur="1" fill="both"></a-animation>
           </a-plane>
-          <a-plane width="6" height="4" translate="-3 0 0" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
+          <a-plane width="6" height="4" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
         </a-entity>
 
         <a-entity position="1 0 0" scale="0.05 0.05 0.05">
           <a-plane width="1" height="4" shader="flat" color="#B4E2F8">
             <a-animation attribute="visible" from="false" to="true" begin="400" dur="1" fill="both"></a-animation>
           </a-plane>
-          <a-plane width="6" height="4" translate="-3 0 0" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
+          <a-plane width="6" height="4" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
         </a-entity>
 
         <a-entity position="2 0 0" scale="0.05 0.05 0.05">
           <a-plane width="1" height="4" shader="flat" color="#B4E2F8">
             <a-animation attribute="visible" from="false" to="true" begin="450" dur="1" fill="both"></a-animation>
           </a-plane>
-          <a-plane width="6" height="4" translate="-3 0 0" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
+          <a-plane width="6" height="4" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
         </a-entity>
 
         <a-entity position="3 0 0" scale="0.05 0.05 0.05">
           <a-plane width="1" height="4" shader="flat" color="#B4E2F8">
             <a-animation attribute="visible" from="false" to="true" begin="500" dur="1" fill="both"></a-animation>
           </a-plane>
-          <a-plane width="6" height="4" translate="-3 0 0" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
+          <a-plane width="6" height="4" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
         </a-entity>
 
         <a-entity position="4 0 0" scale="0.05 0.05 0.05">
           <a-plane width="1" height="4" shader="flat" color="#B4E2F8">
             <a-animation attribute="visible" from="false" to="true" begin="550" dur="1" fill="both"></a-animation>
           </a-plane>
-          <a-plane width="6" height="4" translate="-3 0 0" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
+          <a-plane width="6" height="4" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
         </a-entity>
 
         <a-entity position="5 0 0" scale="0.05 0.05 0.05">
           <a-plane width="1" height="4" shader="flat" color="#B4E2F8">
             <a-animation attribute="visible" from="false" to="true" begin="600" dur="1" fill="both"></a-animation>
           </a-plane>
-          <a-plane width="6" height="4" translate="-3 0 0" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
+          <a-plane width="6" height="4" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
         </a-entity>
 
         <a-entity position="6 0 0" scale="0.05 0.05 0.05">
           <a-plane width="1" height="4" shader="flat" color="#B4E2F8">
             <a-animation attribute="visible" from="false" to="true" begin="650" dur="1" fill="both"></a-animation>
           </a-plane>
-          <a-plane width="6" height="4" translate="-3 0 0" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
+          <a-plane width="6" height="4" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
         </a-entity>
 
         <a-entity position="7 0 0" scale="0.05 0.05 0.05">
           <a-plane width="1" height="4" shader="flat" color="#B4E2F8">
             <a-animation attribute="visible" from="false" to="true" begin="700" dur="1" fill="both"></a-animation>
           </a-plane>
-          <a-plane width="6" height="4" translate="-3 0 0" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
+          <a-plane width="6" height="4" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
         </a-entity>
 
         <a-entity position="8 0 0" scale="0.05 0.05 0.05">
           <a-plane width="1" height="4" shader="flat" color="#B4E2F8">
             <a-animation attribute="visible" from="false" to="true" begin="750" dur="1" fill="both"></a-animation>
           </a-plane>
-          <a-plane width="6" height="4" translate="-3 0 0" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
+          <a-plane width="6" height="4" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
         </a-entity>
 
         <a-entity position="9 0 0" scale="0.05 0.05 0.05">
           <a-plane width="1" height="4" shader="flat" color="#B4E2F8">
             <a-animation attribute="visible" from="false" to="true" begin="800" dur="1" fill="both"></a-animation>
           </a-plane>
-          <a-plane width="6" height="4" translate="-3 0 0" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
+          <a-plane width="6" height="4" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
         </a-entity>
 
         <a-entity position="10 0 0" scale="0.05 0.05 0.05">
           <a-plane width="1" height="4" shader="flat" color="#B4E2F8">
             <a-animation attribute="visible" from="false" to="true" begin="850" dur="1" fill="both"></a-animation>
           </a-plane>
-          <a-plane width="6" height="4" translate="-3 0 0" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
+          <a-plane width="6" height="4" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
         </a-entity>
 
         <a-entity position="11 0 0" scale="0.05 0.05 0.05">
           <a-plane width="1" height="4" shader="flat" color="#B4E2F8">
             <a-animation attribute="visible" from="false" to="true" begin="900" dur="1" fill="both"></a-animation>
           </a-plane>
-          <a-plane width="6" height="4" translate="-3 0 0" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
+          <a-plane width="6" height="4" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
         </a-entity>
 
         <a-entity position="12 0 0" scale="0.05 0.05 0.05">
           <a-plane width="1" height="4" shader="flat" color="#B4E2F8">
             <a-animation attribute="visible" from="false" to="true" begin="950" dur="1" fill="both"></a-animation>
           </a-plane>
-          <a-plane width="6" height="4" translate="-3 0 0" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
+          <a-plane width="6" height="4" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
         </a-entity>
 
         <a-entity position="13 0 0" scale="0.05 0.05 0.05">
           <a-plane width="1" height="4" shader="flat" color="#B4E2F8">
             <a-animation attribute="visible" from="false" to="true" begin="1000" dur="1" fill="both"></a-animation>
           </a-plane>
-          <a-plane width="6" height="4" translate="-3 0 0" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
+          <a-plane width="6" height="4" color="#586266" opacity="0.6" position="0 0 -.01"></a-plane>
         </a-entity>
       </a-entity>
 
@@ -225,6 +226,10 @@
         <a-animation attribute="intensity" from="0" to="1" begin="500" dur="500" fill="both"></a-animation>
       </a-light>
       <a-light type="ambient" color="#4f6487" ></a-light>
+
+      <!-- Sounds. -->
+      <a-entity sound="autoplay: true; src: ../_sounds/321103__nsstudios__blip1.wav;"></a-entity>
+      <a-entity sound="autoplay: true; src: ../_sounds/321104__nsstudios__blip2.wav;"></a-entity>
     </a-scene>
   </body>
 </html>
